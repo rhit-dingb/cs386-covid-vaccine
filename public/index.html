@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
   <link rel="stylesheet" href="styles/main.css">
   <title>Covid Vaccine Adverse Reaction</title>
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <script src="scripts/d3.layout.cloud.js"></script>
 </head>
 
 <body>
@@ -15,49 +17,17 @@
     <a class="navbar-brand" href="#">Covid Vaccine Adverse Reaction</a>
   </nav>
   <div id="listPage" class="container page-container">
+
+      <h3>Nothing to see here</h3>
+    <div id="word-cloud"></div>
+    <div id="container"></div>
    
 
   </div>
 
-
-  <!-- <button id = "fab" type="button" class="btn bmd-btn-fab" data-toggle="modal" data-target="#addQuoteDialog">
-    <i class="material-icons">add</i>
-  </button> -->
-
-  <!-- Modal -->
-  <div class="modal fade" id="addQuoteDialog" tabindex="-1" role="dialog" aria-labelledby="Add quote dialog" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" >Add Movie Quote</h5>
-        </div>
-        <div class="modal-body">
-
-
-          
-            <div class="form-group bmd-form-group">
-              <label for="formGroupExampleInput" class="bmd-label-floating">Quote</label>
-              <input type="text" class="form-control" id="inputQuote">
-            </div>
-            <div class="form-group bmd-form-group"> 
-              <label for="inputMovie" class="bmd-label-floating">Movie</label>
-              <input type="text" class="form-control" id="inputMovie">
-              <span class="bmd-help">What movie is this quote from?</span>
-            </div>
-          
-
-
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">CANCEL</button>
-          <button id = "submitAddQuote"type="button" class="btn btn-primary" data-dismiss="modal">CREATE</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script src="https://d3js.org/d3.v7.min.js"></script> 
-  <!-- adding D3 into the project ! -->
+  
+  
+  <!-- <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script> -->
   <script src="scripts/jquery.min.js"></script>
   <script src="scripts/popper.js"></script>
   <script src="scripts/bootstrap-material-design.js"></script>
@@ -66,8 +36,9 @@
   <script src="/__/firebase/7.18.0/firebase-analytics.js"></script>
   <!-- <script src="/__/firebase/7.18.0/firebase-auth.js"></script> -->
   <script src="/__/firebase/7.18.0/firebase-firestore.js"></script>
-  <script src="/__/firebase/init.js"></script>
+  <script src="/__/firebase/init.js?useEmulator=true"></script>
   <script src="scripts/main.js"></script>
+ 
 </body>
 
 </html>
